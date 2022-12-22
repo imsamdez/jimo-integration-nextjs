@@ -22,7 +22,7 @@ export default function App({ Component, pageProps }) {
           })(window);`,
         }}
       />
-      ;<Component {...pageProps} />
+      <Component {...pageProps} />
     </>
   );
 }
