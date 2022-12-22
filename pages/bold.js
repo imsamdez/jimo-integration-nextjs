@@ -4,6 +4,8 @@ import Image from "next/image";
 import { useRouter } from "next/router";
 import styles from "../styles/Home.module.css";
 
+import Link from "next/link";
+
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
@@ -19,7 +21,10 @@ export default function Home() {
       </Head>
       <main className={styles.main}>
         <div className={styles.description}>
-          <p onClick={() => router.push("/bold#foo=bar")}>Click me</p>
+          <Link href="#foo=bar">
+            <p>Click me</p>
+          </Link>
+
           <div>
             <a
               href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
