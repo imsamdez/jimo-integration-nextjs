@@ -34,7 +34,7 @@ export default function App({ Component, pageProps }) {
               s.type = "text/javascript";
               s.async = true;
               s.src = "https://undercity.usejimo.com/jimo-invader.js";
-              j['JIMO_PROJECT_ID'] = "fd1d5891-9c57-44af-bc42-ab2afd2f2f82";
+              j['JIMO_PROJECT_ID'] = "YOUR_PROJECT_ID";
               
               document.getElementsByTagName("head")[0].appendChild(s);
           })(window);`,
